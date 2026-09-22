@@ -39,7 +39,7 @@ const Header = (props) => {
     } else if (userName) {
       auth.signOut().then(() => {
           dispatch(setSignOutState())
-          navigate("/home")
+          navigate("/")
       }).catch((err) => alert(err.message))
     }
 };
